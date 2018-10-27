@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B564492A2183E7B3004270FD /* HistorialKnockoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56449292183E7B3004270FD /* HistorialKnockoutTableViewController.swift */; };
+		B564492C2183E8FF004270FD /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564492B2183E8FF004270FD /* TicketModel.swift */; };
+		B564492E2183E96D004270FD /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B564492D2183E96D004270FD /* ItemModel.swift */; };
+		B56449322183ED36004270FD /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56449312183ED36004270FD /* DataSource.swift */; };
+		B56449342183F503004270FD /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56449332183F503004270FD /* TicketService.swift */; };
+		B5D5FB8C217B95AA00C7F18A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FB8A217B95AA00C7F18A /* ProfileViewController.swift */; };
+		B5D5FB8F217B97A500C7F18A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D5FB8E217B97A500C7F18A /* Profile.storyboard */; };
 		F144EE532184B9C4009AE502 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F144EE522184B9C4009AE502 /* Login.storyboard */; };
 		F144EE552184B9CD009AE502 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F144EE542184B9CD009AE502 /* Payment.storyboard */; };
 		F1623260217B7AE4003755EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162325F217B7AE4003755EA /* AppDelegate.swift */; };
@@ -31,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
+		B56449292183E7B3004270FD /* HistorialKnockoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialKnockoutTableViewController.swift; sourceTree = "<group>"; };
+		B564492B2183E8FF004270FD /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		B564492D2183E96D004270FD /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		B56449312183ED36004270FD /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		B56449332183F503004270FD /* TicketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketService.swift; sourceTree = "<group>"; };
+		B5D5FB8A217B95AA00C7F18A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B5D5FB8E217B97A500C7F18A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F144EE522184B9C4009AE502 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F144EE542184B9CD009AE502 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 		F162325C217B7AE4003755EA /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +102,13 @@
 		F162325E217B7AE4003755EA /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
+				B56449312183ED36004270FD /* DataSource.swift */,
+				B5D5FB8E217B97A500C7F18A /* Profile.storyboard */,
+				B5D5FB8A217B95AA00C7F18A /* ProfileViewController.swift */,
+				B56449292183E7B3004270FD /* HistorialKnockoutTableViewController.swift */,
+				B56449332183F503004270FD /* TicketService.swift */,
+				B564492D2183E96D004270FD /* ItemModel.swift */,
+				B564492B2183E8FF004270FD /* TicketModel.swift */,
 				F144EE522184B9C4009AE502 /* Login.storyboard */,
 				F144EE542184B9CD009AE502 /* Payment.storyboard */,
 				F1623263217B7AE4003755EA /* Main.storyboard */,
@@ -228,6 +250,7 @@
 				F144EE552184B9CD009AE502 /* Payment.storyboard in Resources */,
 				F162326A217B7AE5003755EA /* LaunchScreen.storyboard in Resources */,
 				F1623267217B7AE5003755EA /* Assets.xcassets in Resources */,
+				B5D5FB8F217B97A500C7F18A /* Profile.storyboard in Resources */,
 				F1623265217B7AE4003755EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B564492C2183E8FF004270FD /* TicketModel.swift in Sources */,
+				B564492E2183E96D004270FD /* ItemModel.swift in Sources */,
+				B56449322183ED36004270FD /* DataSource.swift in Sources */,
+				B56449342183F503004270FD /* TicketService.swift in Sources */,
+				B5D5FB8C217B95AA00C7F18A /* ProfileViewController.swift in Sources */,
+				B564492A2183E7B3004270FD /* HistorialKnockoutTableViewController.swift in Sources */,
 				F1EE5B6C217B853200CC2DB0 /* HomeTableViewController.swift in Sources */,
 				F1623262217B7AE4003755EA /* ViewController.swift in Sources */,
 				F1EE5B74217B87CC00CC2DB0 /* HomeTableViewCell.swift in Sources */,
@@ -417,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp1222;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp1222;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

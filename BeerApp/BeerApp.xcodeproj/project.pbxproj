@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F144EE532184B9C4009AE502 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F144EE522184B9C4009AE502 /* Login.storyboard */; };
+		F144EE552184B9CD009AE502 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F144EE542184B9CD009AE502 /* Payment.storyboard */; };
 		F1623260217B7AE4003755EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162325F217B7AE4003755EA /* AppDelegate.swift */; };
 		F1623262217B7AE4003755EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1623261217B7AE4003755EA /* ViewController.swift */; };
 		F1623265217B7AE4003755EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1623263217B7AE4003755EA /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F144EE522184B9C4009AE502 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = BeerApp/Login.storyboard; sourceTree = "<group>"; };
+		F144EE542184B9CD009AE502 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Payment.storyboard; path = BeerApp/Payment.storyboard; sourceTree = "<group>"; };
 		F162325C217B7AE4003755EA /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F162325F217B7AE4003755EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1623261217B7AE4003755EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				F162325E217B7AE4003755EA /* BeerApp */,
 				F1623273217B7AE5003755EA /* BeerAppUITests */,
 				F162325D217B7AE4003755EA /* Products */,
+				F144EE522184B9C4009AE502 /* Login.storyboard */,
+				F144EE542184B9CD009AE502 /* Payment.storyboard */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +224,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F144EE532184B9C4009AE502 /* Login.storyboard in Resources */,
+				F144EE552184B9CD009AE502 /* Payment.storyboard in Resources */,
 				F162326A217B7AE5003755EA /* LaunchScreen.storyboard in Resources */,
 				F1623267217B7AE5003755EA /* Assets.xcassets in Resources */,
 				F1623265217B7AE4003755EA /* Main.storyboard in Resources */,

@@ -13,9 +13,13 @@
 		F1623267217B7AE5003755EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1623266217B7AE5003755EA /* Assets.xcassets */; };
 		F162326A217B7AE5003755EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1623268217B7AE5003755EA /* LaunchScreen.storyboard */; };
 		F1623275217B7AE5003755EA /* BeerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1623274217B7AE5003755EA /* BeerAppUITests.swift */; };
+
+		FA3C90DF217B97D4004CB66A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C90DE217B97D4004CB66A /* Login.storyboard */; };
+
 		F1EE5B6C217B853200CC2DB0 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE5B6B217B853200CC2DB0 /* HomeTableViewController.swift */; };
 		F1EE5B74217B87CC00CC2DB0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE5B73217B87CC00CC2DB0 /* HomeTableViewCell.swift */; };
 		F1EE5B76217B8E9100CC2DB0 /* BeersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE5B75217B8E9100CC2DB0 /* BeersModel.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +43,13 @@
 		F1623270217B7AE5003755EA /* BeerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1623274217B7AE5003755EA /* BeerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppUITests.swift; sourceTree = "<group>"; };
 		F1623276217B7AE5003755EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		FA3C90DE217B97D4004CB66A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+
 		F1EE5B6B217B853200CC2DB0 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		F1EE5B73217B87CC00CC2DB0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F1EE5B75217B8E9100CC2DB0 /* BeersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersModel.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +99,11 @@
 				F1623266217B7AE5003755EA /* Assets.xcassets */,
 				F1623268217B7AE5003755EA /* LaunchScreen.storyboard */,
 				F162326B217B7AE5003755EA /* Info.plist */,
+
+				FA3C90DE217B97D4004CB66A /* Login.storyboard */,
+
 				F162325F217B7AE4003755EA /* AppDelegate.swift */,
+
 			);
 			path = BeerApp;
 			sourceTree = "<group>";
@@ -218,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3C90DF217B97D4004CB66A /* Login.storyboard in Resources */,
 				F162326A217B7AE5003755EA /* LaunchScreen.storyboard in Resources */,
 				F1623267217B7AE5003755EA /* Assets.xcassets in Resources */,
 				F1623265217B7AE4003755EA /* Main.storyboard in Resources */,
@@ -409,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,7 +440,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Gangrena.BeerApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

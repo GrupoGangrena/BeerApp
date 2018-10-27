@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-
 		B56449292183E7B3004270FD /* HistorialKnockoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialKnockoutTableViewController.swift; sourceTree = "<group>"; };
 		B564492B2183E8FF004270FD /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		B564492D2183E96D004270FD /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
@@ -81,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B56449352184D525004270FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B56449312183ED36004270FD /* DataSource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B56449362184D541004270FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B56449332183F503004270FD /* TicketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F1623253217B7AE4003755EA = {
 			isa = PBXGroup;
 			children = (
@@ -102,16 +117,12 @@
 		F162325E217B7AE4003755EA /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
-				B56449312183ED36004270FD /* DataSource.swift */,
 				B5D5FB8E217B97A500C7F18A /* Profile.storyboard */,
-				B5D5FB8A217B95AA00C7F18A /* ProfileViewController.swift */,
-				B56449292183E7B3004270FD /* HistorialKnockoutTableViewController.swift */,
-				B56449332183F503004270FD /* TicketService.swift */,
-				B564492D2183E96D004270FD /* ItemModel.swift */,
-				B564492B2183E8FF004270FD /* TicketModel.swift */,
 				F144EE522184B9C4009AE502 /* Login.storyboard */,
 				F144EE542184B9CD009AE502 /* Payment.storyboard */,
 				F1623263217B7AE4003755EA /* Main.storyboard */,
+				B56449362184D541004270FD /* Services */,
+				B56449352184D525004270FD /* Network */,
 				F1EE5B70217B872700CC2DB0 /* CustomCells */,
 				F1EE5B6F217B85A300CC2DB0 /* ViewControllers */,
 				F1EE5B6E217B855600CC2DB0 /* TableViewControllers */,
@@ -136,6 +147,8 @@
 		F1EE5B6D217B853B00CC2DB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B564492D2183E96D004270FD /* ItemModel.swift */,
+				B564492B2183E8FF004270FD /* TicketModel.swift */,
 				F1EE5B75217B8E9100CC2DB0 /* BeersModel.swift */,
 			);
 			path = Models;
@@ -144,6 +157,7 @@
 		F1EE5B6E217B855600CC2DB0 /* TableViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B56449292183E7B3004270FD /* HistorialKnockoutTableViewController.swift */,
 				F1EE5B6B217B853200CC2DB0 /* HomeTableViewController.swift */,
 			);
 			name = TableViewControllers;
@@ -152,6 +166,7 @@
 		F1EE5B6F217B85A300CC2DB0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B5D5FB8A217B95AA00C7F18A /* ProfileViewController.swift */,
 				F1623261217B7AE4003755EA /* ViewController.swift */,
 			);
 			name = ViewControllers;

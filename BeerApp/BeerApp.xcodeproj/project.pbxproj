@@ -14,6 +14,7 @@
 		F162326A217B7AE5003755EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1623268217B7AE5003755EA /* LaunchScreen.storyboard */; };
 		F1623275217B7AE5003755EA /* BeerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1623274217B7AE5003755EA /* BeerAppUITests.swift */; };
 		FA3C90DF217B97D4004CB66A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C90DE217B97D4004CB66A /* Login.storyboard */; };
+		FAEF8D82217BA99D004B7A97 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEF8D81217BA99D004B7A97 /* Payment.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F1623274217B7AE5003755EA /* BeerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAppUITests.swift; sourceTree = "<group>"; };
 		F1623276217B7AE5003755EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3C90DE217B97D4004CB66A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		FAEF8D81217BA99D004B7A97 /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F1623268217B7AE5003755EA /* LaunchScreen.storyboard */,
 				F162326B217B7AE5003755EA /* Info.plist */,
 				FA3C90DE217B97D4004CB66A /* Login.storyboard */,
+				FAEF8D81217BA99D004B7A97 /* Payment.storyboard */,
 			);
 			path = BeerApp;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3C90DF217B97D4004CB66A /* Login.storyboard in Resources */,
+				FAEF8D82217BA99D004B7A97 /* Payment.storyboard in Resources */,
 				F162326A217B7AE5003755EA /* LaunchScreen.storyboard in Resources */,
 				F1623267217B7AE5003755EA /* Assets.xcassets in Resources */,
 				F1623265217B7AE4003755EA /* Main.storyboard in Resources */,

@@ -10,19 +10,25 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
-    var beers: [Beer] = []
+    @IBOutlet var beersTable: UITableView!
+    var beers: [Beer] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.beersTable.reloadData()
+            }
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        //beers = Beer.loadSampleBeers()
         
-        if let savedBeers = Beer.loadBeers() {
-            beers = savedBeers
-        } else {
-            beers = Beer.loadSampleBeers()
+        Beer.fetchItems { (beer) in
+            self.beers = beer ?? []
+            print(self.beers.count)
         }
-        
         
     }
 
@@ -44,8 +50,19 @@ class HomeTableViewController: UITableViewController {
             fatalError("Could not dequeue cell")
         }
 
+        //Put data into each row
         let beer = beers[indexPath.row]
         cell.beerTitleLabel?.text = beer.title
+        /*
+        do{
+            let urlImage = URL(string: beer.image )
+            let dataImage = try Data(contentsOf: urlImage!)
+            cell.imageView?.image = UIImage(data: dataImage)
+        }catch{
+            print(error)
+        }
+        
+        */
 
         return cell
     }
@@ -95,5 +112,8 @@ class HomeTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+
+    
 
 }

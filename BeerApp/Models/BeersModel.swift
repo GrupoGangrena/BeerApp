@@ -25,8 +25,8 @@ struct Beer: Codable {
     }
     
     
-
-
+    
+    
     
     
     
@@ -48,7 +48,7 @@ struct Beer: Codable {
         let task = URLSession.shared.dataTask(with: url) { (data,
             response, error) in
             let decoder = JSONDecoder()
-
+            
             if let data = data,
                 let beerItems = try?
                     decoder.decode(BeerItems.self, from: data) {

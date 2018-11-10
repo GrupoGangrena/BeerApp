@@ -8,21 +8,63 @@
 
 import UIKit
 
-struct Beer {
-    var id: Int
-    var title: String
-    var image: UIImage?
-    var quantity: Int
-    var description: String
+struct Beer: Codable {
+    var id: String?
+    var title: String?
     
-    static func loadSampleBeers() -> [Beer] {
-        let beer1 = Beer(id: 101, title: "Beer One", image: nil, quantity: 100, description: "First beer ever made")
-        let beer2 = Beer(id: 102, title: "Beer Two", image: nil, quantity: 100, description: "The most underrated beer")
-        let beer3 = Beer(id: 103, title: "Beer Three", image: nil, quantity: 100, description: "German special beer")
-        return [beer1, beer2, beer3]
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title = "name"
     }
     
-    static func loadBeers() -> [Beer]? {
-        return nil
+    init(from decoder: Decoder) throws {
+        let valueContainer = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try valueContainer.decode(String.self, forKey:
+            CodingKeys.id)
+        self.title = try valueContainer.decode(String.self, forKey: CodingKeys.title)
     }
+    
+    
+    
+    
+    
+    
+    
+    // MARK: Network Request
+    
+    static func fetchItems(completion: @escaping ([Beer]?) -> Void) {
+        
+        let baseURL = URL(string: "http://api.brewerydb.com/v2/beers/")!
+        let query : [String: String] = [
+            "key": "dbd4d04a07a00fa0b32f672753e55b4c"
+        ]
+        
+        guard let url = baseURL.withQueries(query) else {
+            completion(nil)
+            print("Unable to build URL with supplied queries.")
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data,
+            response, error) in
+            let decoder = JSONDecoder()
+            
+            if let data = data,
+                let beerItems = try?
+                    decoder.decode(BeerItems.self, from: data) {
+                completion(beerItems.data)
+            } else {
+                print("Either no data was returned, or data was not serialized.")
+                
+                completion(nil)
+                return
+            }
+        }
+        
+        task.resume()
+    }
+}
+
+struct BeerItems: Codable {
+    let data: [Beer]
 }

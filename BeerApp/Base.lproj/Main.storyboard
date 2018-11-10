@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qXx-lh-hZF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qXx-lh-hZF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,8 +28,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cerveza X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsA-35-aIu">
-                                            <rect key="frame" x="69" y="21" width="98" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <rect key="frame" x="69" y="24.5" width="83" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -46,24 +48,24 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="punchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="c0T-Bj-VeQ">
-                                            <rect key="frame" x="263" y="8" width="60" height="53"/>
+                                            <rect key="frame" x="286" y="17" width="37" height="37"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="53" id="QIL-CE-fu0"/>
-                                                <constraint firstAttribute="width" constant="60" id="XL4-tZ-wCa"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="lvz-8z-K6u"/>
+                                                <constraint firstAttribute="height" constant="37" id="QIL-CE-fu0"/>
+                                                <constraint firstAttribute="width" constant="37" id="XL4-tZ-wCa"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="37" id="lvz-8z-K6u"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="0Rz-hq-URD" firstAttribute="top" secondItem="DFd-BK-fQi" secondAttribute="top" constant="8" id="5k5-jj-bQl"/>
-                                        <constraint firstItem="c0T-Bj-VeQ" firstAttribute="centerY" secondItem="0qV-we-p5v" secondAttribute="centerY" constant="-1" id="T5B-XK-PpJ"/>
+                                        <constraint firstItem="c0T-Bj-VeQ" firstAttribute="centerY" secondItem="0qV-we-p5v" secondAttribute="centerY" id="T5B-XK-PpJ"/>
                                         <constraint firstItem="0qV-we-p5v" firstAttribute="leading" secondItem="c0T-Bj-VeQ" secondAttribute="trailing" constant="8" id="Vp6-Go-QXN"/>
                                         <constraint firstItem="nsA-35-aIu" firstAttribute="leading" secondItem="0Rz-hq-URD" secondAttribute="trailing" constant="8" symbolic="YES" id="iuY-zC-pJX"/>
                                         <constraint firstItem="0qV-we-p5v" firstAttribute="trailing" secondItem="DFd-BK-fQi" secondAttribute="trailingMargin" id="kFG-gB-yv2"/>
                                         <constraint firstAttribute="bottom" secondItem="0Rz-hq-URD" secondAttribute="bottom" constant="8.5" id="kUc-4S-7TN"/>
-                                        <constraint firstItem="c0T-Bj-VeQ" firstAttribute="top" secondItem="DFd-BK-fQi" secondAttribute="topMargin" constant="-3" id="mXx-Jt-bXq"/>
+                                        <constraint firstItem="c0T-Bj-VeQ" firstAttribute="top" secondItem="DFd-BK-fQi" secondAttribute="topMargin" constant="6" id="mXx-Jt-bXq"/>
                                         <constraint firstItem="0Rz-hq-URD" firstAttribute="leading" secondItem="DFd-BK-fQi" secondAttribute="leading" constant="8" id="mlc-rS-25w"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nsA-35-aIu" secondAttribute="trailing" constant="20" symbolic="YES" id="nTX-6p-IwH"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nsA-35-aIu" secondAttribute="trailing" constant="100" id="nTX-6p-IwH"/>
                                         <constraint firstItem="nsA-35-aIu" firstAttribute="centerY" secondItem="0Rz-hq-URD" secondAttribute="centerY" id="so4-vo-7Da"/>
                                         <constraint firstItem="0qV-we-p5v" firstAttribute="centerY" secondItem="DFd-BK-fQi" secondAttribute="centerY" id="xBk-Gu-SUE"/>
                                     </constraints>
@@ -83,6 +85,9 @@
                     <navigationItem key="navigationItem" id="9qA-u6-FRD">
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="gmv-E2-cki"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="beersTable" destination="e6n-wO-ov2" id="nNR-c3-yPP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohq-KH-Fke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +113,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultDrink" width="237.83226013183594" height="237.83226013183594"/>
-        <image name="punchIcon" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="defaultDrink" width="512" height="512"/>
+        <image name="punchIcon" width="512" height="512"/>
     </resources>
 </document>
